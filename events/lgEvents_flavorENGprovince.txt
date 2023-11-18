@@ -1,0 +1,446 @@
+namespace = ENG_event
+
+################################################
+# Province Events - Others										 #
+################################################
+
+# Gibraltar
+#country_event = {
+#	id = ENG_event.2071
+#	title = "ENG_event.EVTNAME2071"
+#	desc = "ENG_event.EVTDESC2071"
+#	picture = FORT_eventPicture
+#	
+#	trigger = {
+#		lgTriggers_british = yes
+#		mil_tech = 12
+#		226 = {
+#			owned_by = ROOT
+#			fort_level = 1
+#			NOT = {
+#				has_province_modifier = lgModifiers_gibraltar
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2071"
+#		226 = {
+#			add_province_modifier = {
+#				name = lgModifiers_gibraltar
+#				duration = -1
+#			}
+#		}
+#	}
+#}
+
+# Rise of the city of Liverpool
+#country_event = {
+#	id = ENG_event.2072
+#	title = "ENG_event.EVTNAME2072"
+#	desc = "ENG_event.EVTDESC2072"
+#	picture = MERCHANTS_TALKING_eventPicture
+#	
+#	trigger = {
+#		lgTriggers_british = yes
+#		is_year = 1700
+#		owns = 4375
+#		4375 = {
+#			NOT = { has_province_flag = lgFlags_Liverpool }
+#			NOT = { province_has_center_of_trade_of_level = 1 }
+#		}
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2072"
+#		4375 = {
+#			center_of_trade = 1
+#			rename_capital = "Liverpool"
+#			add_base_tax = 1
+#			add_base_production = 1
+#			add_base_manpower = 1
+#			set_province_flag = lgFlags_Liverpool
+#		}
+#	}
+#}
+
+# Rise of the city of Leeds
+#country_event = {
+#	id = ENG_event.2073
+#	title = "ENG_event.EVTNAME2073"
+#	desc = "ENG_event.EVTDESC2073"
+#	picture = ECONOMY_eventPicture
+#	
+#	trigger = {
+#		lgTriggers_british = yes
+#		is_year = 1750
+#		owns = 245
+#		245 = {
+#			NOT = { has_province_flag = lgFlags_Leeds }
+#		}
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2073"
+#		245 = {
+#			rename_capital = "Leeds"
+#			add_base_tax = 1
+#			add_base_production = 1
+#			add_base_manpower = 1
+#			set_province_flag = lgFlags_Leeds
+#		}
+#	}
+#}
+
+# Bermuda
+#country_event = {
+#	id = ENG_event.2074
+#	title = "ENG_event.EVTNAME2074"
+#	desc = "ENG_event.EVTDESC2074"
+#	picture = FORT_eventPicture
+#	
+#	trigger = {
+#		lgTriggers_british = yes
+#		is_year = 1500
+#		481 = {
+#			owned_by = ROOT
+#			fort_level = 1
+#			NOT = {
+#				has_province_modifier = lgModifiers_bermuda
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	option = {
+#		name = "EVTOPT_EXCELLENT"
+#		481 = {
+#			add_province_modifier = {
+#				name = lgModifiers_bermuda
+#				duration = -1
+#			}
+#		}
+#	}
+#}
+
+# Establishment of Royal Naval Dockyards
+#country_event = {
+#	id = ENG_event.2075
+#	title = "ENG_event.EVTNAME2075"
+#	desc = "ENG_event.EVTDESC2075"
+#	picture = FORT_eventPicture
+#	
+#	trigger = {
+#		lgTriggers_british = yes
+#		mil_tech = 12
+#		any_owned_province = {
+#			OR = {
+#				province_id = 226 # Gibraltar
+#				province_id = 244 # Lancashire
+#				province_id = 481 # Bermuda
+#				province_id = 233 # Cornwall
+#				province_id = 234 # Hampshire
+#				province_id = 235 # Kent
+#				province_id = 236 # London
+#				province_id = 238 # Essex
+#				province_id = 239 # Gloucestershire
+#				province_id = 248 # Lothian
+#				province_id = 1860 # Norfolk
+#				province_id = 4121 # Ulster
+#				province_id = 4130 # Somerset
+#				province_id = 4371 # Sussex
+#				province_id = 4373 # Devon
+#				province_id = 4374 # Dorset
+#				province_id = 572 # Kotte
+#			}
+#			OR = {
+#				has_building = shipyard
+#				has_building = grand_shipyard
+#			}
+#			NOT = {
+#				has_province_modifier = lgModifiers_RoyalNavyDockyard
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2075"
+#		every_owned_province = {
+#			limit = {
+#				NOT = {
+#					has_province_modifier = lgModifiers_RoyalNavyDockyard
+#				}
+#				OR = {
+#				province_id = 226 # Gibraltar
+#				province_id = 244 # Lancashire
+#				province_id = 481 # Bermuda
+#				province_id = 233 # Cornwall
+#				province_id = 234 # Hampshire
+#				province_id = 235 # Kent
+#				province_id = 236 # London
+#				province_id = 238 # Essex
+#				province_id = 239 # Gloucestershire
+#				province_id = 248 # Lothian
+#				province_id = 1860 # Norfolk
+#				province_id = 4121 # Ulster
+#				province_id = 4130 # Somerset
+#				province_id = 4371 # Sussex
+#				province_id = 4373 # Devon
+#				province_id = 4374 # Dorset
+#				province_id = 572 # Kotte
+#				}
+#			}
+#			add_province_modifier = {
+#				name = lgModifiers_RoyalNavyDockyard
+#				duration = -1
+#			}
+#		}
+#	}
+#}
+
+# Rise of the city of Portsmouth
+#country_event = {
+#	id = ENG_event.2076
+#	title = "ENG_event.EVTNAME2076"
+#	desc = "ENG_event.EVTDESC2076"
+#	picture = MERCHANTS_TALKING_eventPicture
+#	
+#	trigger = {
+#		lgTriggers_british = yes
+#		is_year = 1700
+#		owns = 234
+#		234 = {
+#			NOT = { has_province_flag = lgFlags_Portsmouth }
+#		}
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2076"
+#		234 = {
+#			rename_capital = "Portsmouth"
+#			add_base_tax = 1
+#			add_base_production = 1
+#			add_base_manpower = 1
+#			set_province_flag = lgFlags_Portsmouth
+#		}
+#	}
+#}
+
+# Belfast
+country_event = {
+	id = ENG_event.2077
+	title = "ENG_event.EVTNAME2077"
+	desc = "ENG_event.EVTDESC2077"
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		OR = {
+			lgTriggers_british = yes
+			AND = {
+				tag = IRE
+				OR = {
+					is_subject_of = ENG
+					is_subject_of = GBR
+				}
+			}
+		}
+		is_year = 1607
+		owns = 3217
+		3217 = {
+			NOT = { has_province_flag = lgFlags_Belfast }
+		}
+	}
+	
+	option = {
+		name = "ENG_event.EVTOK2077"
+		3217 = {
+			rename_capital = "Belfast"
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			set_province_flag = lgFlags_Belfast
+		}
+	}
+}
+
+# Birmingham
+#country_event = {
+#	id = ENG_event.2078
+#	title = "ENG_event.EVTNAME2078"
+#	desc = "ENG_event.EVTDESC2078"
+#	picture = MERCHANTS_TALKING_eventPicture
+#	
+#	trigger = {
+#		lgTriggers_british = yes
+#		is_year = 1700
+#		owns = 1861
+#		1861 = {
+#			NOT = { has_province_flag = lgFlags_Birmingham }
+#		}
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2078"
+#		1861 = {
+#			rename_capital = "Birmingham"
+#			add_base_tax = 1
+#			add_base_production = 1
+#			add_base_manpower = 1
+#			set_province_flag = lgFlags_Birmingham
+#		}
+#	}
+#}
+
+# Plantation of Ulster
+#country_event = {
+#	id = ENG_event.2079
+#	title = "ENG_event.EVTNAME2079"
+#	desc = "ENG_event.EVTDESC2079"
+#	picture = MERCHANTS_TALKING_eventPicture
+#	
+#	trigger = {
+#		OR = {
+#			lgTriggers_british = yes
+#			AND = {
+#				tag = IRE
+#				OR = {
+#					is_subject_of = ENG
+#					is_subject_of = GBR
+#				}
+#			}
+#		}
+#		is_year = 1609
+#		4121 = {
+#			has_province_flag = lgFlags_Belfast
+#		}
+#		any_owned_province = {
+#			OR = {
+#				province_id = 372 # Tyrone
+#				province_id = 4121 # Ulster
+#				province_id = 4380 # Donegal
+#			}
+#		}
+#		NOT = { has_country_flag = lgFlags_Plantation }
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2079"
+#		set_country_flag = lgFlags_Plantation
+#		every_owned_province = {
+#			limit = {
+#				OR = {
+#					province_id = 372 # Tyrone
+#					province_id = 4121 # Ulster
+#					province_id = 4380 # Donegal
+#				}
+#			}
+#			change_culture = english
+#			if = {
+#				limit = {
+#					owner = {
+#						religion = anglican
+#					}
+#				}
+#				change_religion = anglican
+#			}
+#		}
+#	}
+#}
+
+# Omagh
+#country_event = {
+#	id = ENG_event.2080
+#	title = "ENG_event.EVTNAME2080"
+#	desc = "ENG_event.EVTDESC2080"
+#	picture = MERCHANTS_TALKING_eventPicture
+#	
+#	trigger = {
+#		OR = {
+#			lgTriggers_british = yes
+#			AND = {
+#				tag = IRE
+#				OR = {
+#					is_subject_of = ENG
+#					is_subject_of = GBR
+#				}
+#			}
+#		}
+#		is_year = 1768
+#		owns = 372
+#		372 = {
+#			NOT = { has_province_flag = lgFlags_Omagh }
+#		}
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2080"
+#		372 = {
+#			rename_capital = "Omagh"
+#			add_base_tax = 1
+#			add_base_production = 1
+#			add_base_manpower = 1
+#			set_province_flag = lgFlags_Omagh
+#		}
+#	}
+#}
+
+# Linen Board
+#country_event = {
+#	id = ENG_event.2081
+#	title = "ENG_event.EVTNAME2081"
+#	desc = "ENG_event.EVTDESC2081"
+#	picture = MERCHANTS_TALKING_eventPicture
+#	
+#	trigger = {
+#		OR = {
+#			lgTriggers_british = yes
+#			AND = {
+#				tag = IRE
+#				OR = {
+#					is_subject_of = ENG
+#					is_subject_of = GBR
+#				}
+#			}
+#		}
+#		is_year = 1711
+#		4121 = {
+#			has_province_flag = lgFlags_Belfast
+#		}
+#		any_owned_province = {
+#			OR = {
+#				province_id = 372 # Tyrone
+#				province_id = 4121 # Ulster
+#			}
+#		}
+#		NOT = { has_country_flag = lgFlags_IrishLinenBoard }
+#	}
+#	
+#	option = {
+#		name = "ENG_event.EVTOK2081"
+#		set_country_flag = lgFlags_IrishLinenBoard
+#		every_owned_province = {
+#			limit = {
+#				OR = {
+#					province_id = 372 # Tyrone
+#					province_id = 4121 # Ulster
+#				}
+#			}
+#			change_trade_goods = cloth
+#			add_province_modifier = {
+#				name = lgModifers_IrishLinenBoard
+#				duration = -1
+#			}
+#		}
+#	}
+#}
