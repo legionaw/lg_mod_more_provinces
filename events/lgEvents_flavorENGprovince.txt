@@ -12,7 +12,7 @@ namespace = ENG_event
 #	picture = FORT_eventPicture
 #	
 #	trigger = {
-#		lgTriggers_british = yes
+#		lgTriggers_british2 = yes
 #		mil_tech = 12
 #		226 = {
 #			owned_by = ROOT
@@ -46,7 +46,7 @@ namespace = ENG_event
 #	picture = MERCHANTS_TALKING_eventPicture
 #	
 #	trigger = {
-#		lgTriggers_british = yes
+#		lgTriggers_british2 = yes
 #		is_year = 1700
 #		owns = 4375
 #		4375 = {
@@ -76,7 +76,7 @@ namespace = ENG_event
 #	picture = ECONOMY_eventPicture
 #	
 #	trigger = {
-#		lgTriggers_british = yes
+#		lgTriggers_british2 = yes
 #		is_year = 1750
 #		owns = 245
 #		245 = {
@@ -104,7 +104,7 @@ namespace = ENG_event
 #	picture = FORT_eventPicture
 #	
 #	trigger = {
-#		lgTriggers_british = yes
+#		lgTriggers_british2 = yes
 #		is_year = 1500
 #		481 = {
 #			owned_by = ROOT
@@ -138,7 +138,7 @@ namespace = ENG_event
 #	picture = FORT_eventPicture
 #	
 #	trigger = {
-#		lgTriggers_british = yes
+#		lgTriggers_british2 = yes
 #		mil_tech = 12
 #		any_owned_province = {
 #			OR = {
@@ -217,7 +217,7 @@ namespace = ENG_event
 #	picture = MERCHANTS_TALKING_eventPicture
 #	
 #	trigger = {
-#		lgTriggers_british = yes
+#		lgTriggers_british2 = yes
 #		is_year = 1700
 #		owns = 234
 #		234 = {
@@ -246,7 +246,7 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			lgTriggers_british = yes
+			lgTriggers_british2 = yes
 			AND = {
 				tag = IRE
 				OR = {
@@ -282,7 +282,7 @@ country_event = {
 #	picture = MERCHANTS_TALKING_eventPicture
 #	
 #	trigger = {
-#		lgTriggers_british = yes
+#		lgTriggers_british2 = yes
 #		is_year = 1700
 #		owns = 1861
 #		1861 = {
@@ -311,7 +311,7 @@ country_event = {
 #	
 #	trigger = {
 #		OR = {
-#			lgTriggers_british = yes
+#			lgTriggers_british2 = yes
 #			AND = {
 #				tag = IRE
 #				OR = {
@@ -367,7 +367,7 @@ country_event = {
 #	
 #	trigger = {
 #		OR = {
-#			lgTriggers_british = yes
+#			lgTriggers_british2 = yes
 #			AND = {
 #				tag = IRE
 #				OR = {
@@ -404,7 +404,7 @@ country_event = {
 #	
 #	trigger = {
 #		OR = {
-#			lgTriggers_british = yes
+#			lgTriggers_british2 = yes
 #			AND = {
 #				tag = IRE
 #				OR = {

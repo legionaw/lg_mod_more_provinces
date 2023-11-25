@@ -33,7 +33,7 @@ discovered_by = eastern
 1585.1.1 = { religion = reformed }
 1645.12.17 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB }
 1646.5.5 = { revolt = {} controller = ENG } # End of First English Civil War
-1700.1.1 = { capital = "Birmingham" }
+# 1700.1.1 = { capital = "Birmingham" }
 1707.5.12 = {
 	owner = GBR
 	controller = GBR

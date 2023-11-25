@@ -1,0 +1,11 @@
+lgTriggers_british2 = {
+	OR = {
+		AND = {
+			tag = ENG
+			NOT = { 
+				exists = GBR
+			}
+		}
+		tag = GBR
+	}
+}
